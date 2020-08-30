@@ -22,13 +22,16 @@ margin: 0;
 
 body{
     color: #2F3035;
-    font-family: sans-serif;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight:400;
 }
 
 .container {
-    min-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0px auto;
 }
 
 .header_top-inner {
@@ -36,15 +39,119 @@ body{
     justify-content: space-between;
     align-items: center;
     min-height: 122px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    font-weight: 700;
 }
+
+.header_box {
+    display: flex;
+}
+
+.header_adress{
+    margin-right: 30px;
+    width: 235px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.header_adress::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/ggg.svg);
+    width: 30px;
+    height: 32px;
+    left: 0;
+    top: -13px;
+}
+
+.user-list{
+    margin-right: 15px;
+    display: flex;
+    align-items:center;
+}
+
+.user-list-item{
+    padding-right: 10px;
+}
+
+.user-list-link img{
+    width: 24px;
+    height: 24px;
+}
+
 .menu_item {
     display: inline-block;
 }
 
 .menu_item + .menu_item{
-    padding-left: 50px;
+    padding-left: 40px;
 }
 
-.user-list {
-    display: inline-block;
+.menu_link{
+    font-size: 18px;
+}
+
+.basket {
+    position: relative;
+}
+
+.basket_num{
+    position: absolute;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    color: white;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 18px ;
+    background-color:#1C65CD;
+    border-radius: 50%;
+    text-align: center;
+    right: -18px;
+    bottom: -27px;
+}
+
+
+.menu-categories {
+    background-color:#F0F0F4;
+    display: flex ;
+    align-items:center;
+    justify-content: space-around;
+    min-height: 45px;
+}
+
+.menu-categories-item{
+    position: relative;
+}
+
+.menu-categories-link {
+    transition: all 0.2s;
+    font-weight: 400;
+    padding: 15px 0 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+.menu-categories-link::before{
+    content:"";
+    position: absolute;
+    width: 0;
+    right: 0;
+    left: auto;
+    background-color:orange;
+    height: 3px;
+    bottom: -2px;
+    transition: all 0.5s;
+}
+.menu-categories-link:hover {
+    color: black;    
+    font-weight: 540;
+}
+
+.menu-categories-link:hover::before{
+    width:100% ;
+    right: auto;
+    left: auto;
 }
