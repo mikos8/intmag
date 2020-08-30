@@ -43,6 +43,10 @@ body{
     font-weight: 700;
 }
 
+.logo {
+    font-size: 40px;   
+}
+
 .header_box {
     display: flex;
 }
@@ -111,6 +115,9 @@ body{
     bottom: -27px;
 }
 
+.header_bottom{
+    margin-bottom: 35px;
+}
 
 .menu-categories {
     background-color:#F0F0F4;
@@ -120,20 +127,13 @@ body{
     min-height: 45px;
 }
 
-.menu-categories-item{
-    position: relative;
-}
-
 .menu-categories-link {
     transition: all 0.2s;
     font-weight: 400;
     padding: 15px 0 14px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-   
+    position: relative;   
 }
+
 .menu-categories-link::before{
     content:"";
     position: absolute;
